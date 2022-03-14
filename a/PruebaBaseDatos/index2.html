@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+<body>
+
+        <form id="task-form">
+            <label for="title">Username</label>
+            <br>
+            <input type="text" placeholder="Task Title" id="task-title">
+            <br>
+            <label for="contraseña">contraseña</label>
+            <br>
+            <input type="password" id="task-contraseña" rows="3" placeholder="Task contraseña">
+            
+            <button  id="btn-task-save">Save</button>
+
+
+        </form>
+        <div id="task-container"></div>
+
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyCiLIm_t4K2U5zs2SIWEmodlMz1aVMJeiY",
+              authDomain: "casino-112ad.firebaseapp.com",
+              projectId: "casino-112ad",
+              storageBucket: "casino-112ad.appspot.com",
+              messagingSenderId: "668466494049",
+              appId: "1:668466494049:web:d4e5a74cfd45e9cb31c820",
+              measurementId: "G-83DK0BM9VB"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          </script>
+
+        <script type="module" src="opera.js"></script>
+
+</body>
+</html>

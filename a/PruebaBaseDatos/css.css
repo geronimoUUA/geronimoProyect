@@ -1,0 +1,21 @@
+input{
+    margin-top: 4px;
+    margin-left: 45%;
+
+}
+button{
+    margin-top: 4px;
+    position: relative;
+    background-color:deepskyblue;
+}
+button:hover{
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
+label{
+    margin-left: 45%;
+    padding: 10px;
+
+}
+
